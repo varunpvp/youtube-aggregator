@@ -1,0 +1,15 @@
+youtube aggregator
+
+/ -> home
+	search option with filters
+	top 10 channels sorted by most views
+	auto load more channels when user reaches end
+
+/:channel-id
+	show details of channel
+	back option
+	
+/search
+	list of matching channels
+	max 20 
+	add pagination

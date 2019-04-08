@@ -22,10 +22,11 @@ const routes = [
         name: 'channel',
         path: '/channels/:id',
         component: Channel,
+        props: true,
     },
 ]
 
 export default new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     routes
 });

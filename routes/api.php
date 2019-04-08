@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::resource('/channels', 'ChannelsController');
+
+Route::get('/channels', 'ChannelsController@index');
+Route::get('/channels/{channel}', 'ChannelsController@show');
